@@ -169,7 +169,7 @@ plt.show()
 ### SAVE ASCII OUTPUT
 # Save the final elevation data to an ASCII file for GIS visualization.
 header = f'NCOLS {n_long} \nNROWS {n_lat} \nxllcorner {xllcorner} \nyllcorner {yllcorner} \ncellsize {dxy} \nNODATA_value -9999'
-np.savetxt('InitialBeach_elev.asc', z, header=header, comments='')
+np.savetxt('FinalBeach_elev.asc', z, header=header, comments='')
 
 
 
